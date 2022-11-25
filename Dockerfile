@@ -1,3 +1,8 @@
-FROM ubuntu:22.04
+FROM node:18
 
-CMD ["echo", "Hello Simple Docker!"]
+WORKDIR /app
+COPY . /app
+
+RUN npm install
+
+CMD ["npm", "run", "start"]
