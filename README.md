@@ -18,3 +18,8 @@ docker run -it -p 80:3000 simple-docker:latest
 ```
 
 Added GPG key: Signed commits next...
+
+```
+# Start a container
+docker start <container_id> # Start in detached mode
+```
