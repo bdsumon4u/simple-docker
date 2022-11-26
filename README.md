@@ -16,3 +16,5 @@ docker stop <container_id> # Or first unique latters
 # Run a container with ports published, interactive & tty
 docker run -it -p 80:3000 simple-docker:latest
 ```
+
+Added GPG key: Signed commits next...
