@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+  webapp:
+    image: simple-docker:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '80:3000'
+    volumes:
+      - simple-files:/storage/more-files
+
+# Most important!
+volumes:
+  simple-files:
+    external: true
