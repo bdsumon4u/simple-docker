@@ -35,4 +35,10 @@ docker run -it -p 80:3000 \
     -v $PWD/files:/storage/files \
     -v simple-files:/storage/more-files \
     simple-docker:latest
+
+# Run a command, and delete the created container after exit. OneOFF --rm
+docker run -it -p 80:3000 --rm \
+    -v $PWD/files:/storage/files \
+    -v simple-files:/storage/more-files \
+    simple-docker:latest
 ```
