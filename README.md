@@ -28,4 +28,11 @@ docker run -it -p 80:3000 -v $PWD/files:/storage/files simple-docker:latest
 
 # Execute a shell session inside container
 docker exec -it <container_id> bash
+
+# Mount a Docker Volume inside the container folder
+docker volume create simple-files # First, have it created.
+docker run -it -p 80:3000 \
+    -v $PWD/files:/storage/files \
+    -v simple-files:/storage/more-files \
+    simple-docker:latest
 ```
