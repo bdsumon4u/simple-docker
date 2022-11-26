@@ -41,4 +41,8 @@ docker run -it -p 80:3000 --rm \
     -v $PWD/files:/storage/files \
     -v simple-files:/storage/more-files \
     simple-docker:latest
+
+# Explore Docker-Compose
+# Build using docker compose
+docker compose build
 ```
